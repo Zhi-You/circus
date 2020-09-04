@@ -3,7 +3,10 @@ package circus;
 import circus.animal.Animal;
 import circus.animal.Bird;
 import circus.animal.Duck;
+<<<<<<< HEAD:src/main/java/circus/Trainer.java
 import circus.animal.Parrot;
+=======
+>>>>>>> improved:src/main/java/Trainer.java
 
 public class Trainer {
     public static void main(String[] args) {
@@ -19,9 +22,13 @@ public class Trainer {
         Duck d2 = (Duck) a; // downcasting
         getToSpeak(d2);
         train(new Duck());
+<<<<<<< HEAD:src/main/java/circus/Trainer.java
         train(new Parrot());
         //circus.animal.Animal a2 = new circus.animal.Animal();
         //circus.animal.Bird b2 = new circus.animal.Bird();
+=======
+        // train(new circus.animal.Parrot());
+>>>>>>> improved:src/main/java/Trainer.java
     }
 
     private static void getToSpeak(Animal animal) {
@@ -30,7 +37,9 @@ public class Trainer {
 
     // only available for duck objects
     private static void train(Bird bird) {
-        Duck d = (Duck) bird;
-        d.swim();
+        if (bird instanceof Duck) {
+            Duck d = (Duck) bird;
+            d.swim();
+        }
     }
 }
