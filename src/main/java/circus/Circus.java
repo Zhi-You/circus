@@ -35,15 +35,13 @@ public class Circus {
 
             total += a.getValue();
             System.out.println("Adding item value: " + a.getValue());
-<<<<<<< HEAD:src/main/java/circus/Circus.java
             // some
             // more
             // code
             // here ...
 
 
-=======
->>>>>>> improved:src/main/java/Circus.java
+
         }
         return total;
     }
@@ -51,10 +49,7 @@ public class Circus {
     public static void main(String[] args) {
         makeAnimalsTalk();
         System.out.println("Total value of equipments " + calculateValue(equipments));
-<<<<<<< HEAD:src/main/java/circus/Circus.java
         System.out.println("Total value of animals" + calculateValue(animals));
-=======
         System.out.println("Total value of animals " + calculateValue(animals));
->>>>>>> improved:src/main/java/Circus.java
     }
 }
